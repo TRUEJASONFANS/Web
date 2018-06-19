@@ -79,14 +79,14 @@ live-server
     "username": "", //用户名
     "password": "", //密码
     "protocol": "sftp", //模式
-    "agent": null,  
+    "agent": null,
     "privateKeyPath": null,
     "passphrase": null,
     "passive": false,
     "interactiveAuth": false,
     "remotePath": "/root/node/build/",  //服务器上的文件地址
     "context": "./server/build",        //本地的文件地址
-    
+
     "uploadOnSave": true,   //监听保存并上传
     "syncMode": "update",
     "watcher": {            //监听外部文件
@@ -123,7 +123,7 @@ Sass 文件格式化。
 
 - <https://github.com/varHarrie/varharrie.github.io/issues/10>
 
-### vscode-fileheader：添加顶部注释模板
+### vscode-fileheader：添加顶部注释模板(签名)
 
 （1）安装插件vscode -fileheader，并重启。
 
@@ -136,11 +136,67 @@ Sass 文件格式化。
 - <https://www.zhihu.com/question/62385647>
 
 
+### Express
+
+在本地开启Node服务器：
+
+20180611_2230.png
+
+然后在浏览器的地址栏输入`http://localhost/` + 文件的相对路径，就可以通过服务器的形式打开这个文件。
+
+### Copy Relative Path
+
+复制文件的相对路径：（相对于根路径而言）
+
+20180611_2235.png
 
 
-### Vue 相关的插件
+### open in browser
 
-- vetur：vue 文件的基本语法高亮
+在浏览器中打开。
+
+
+### Auto Rename Tag
+
+适用于 JSX、Vue、HTML。在修改标签名时，能在你修改开始（结束）标签的时候修改对应的结束（开始）标签，帮你减少 50% 的击键。
+
+
+###Project Manager
+
+项目管理，让我们方便的在命令面板中切换项目文件夹，当然，你也可以直接打开包含多个项目的父级文件夹，但这样可能会让 VSCode 变慢。
+
+
+
+### highlight-icemode：选中相同的代码时，让高亮显示更加明显
+
+VSCode自带的高亮显示，实在是不够显眼。用插件支持一下吧。
+
+所用了这个插件之后，VS Code自带的高亮就可以关掉了：
+
+在用户设置里添加`"editor.selectionHighlight": false`即可。
+
+
+参考链接：[vscode 选中后相同内容高亮插件推荐](https://blog.csdn.net/palmer_kai/article/details/79548164)
+
+
+### highlight-words：全局高亮（跨文件多色彩）
+
+
+参考链接：[Visual Studio Code全局高亮着色插件(跨文件多色彩)经验纪要](https://zhuanlan.zhihu.com/p/31163793)
+
+
+
+
+
+
+
+
+
+
+
+## Vue 相关的插件
+
+### vetur：vue 文件的基本语法高亮
 
 安装完 vetur 后还需要加上这样一段配置下：
 
@@ -176,7 +232,7 @@ Sass 文件格式化。
 |:-------------|:-------------|:-----|:-----|
 | Shift + Alt + F |Shift + option + F| 代码格式化 |  |
 | Ctrl + Shift + N | |在当前行上面增加一行并跳至该行  |   |
-|  **Ctrl + Shift + D** | |复制当前行到下一行  |   | 
+|  **Ctrl + Shift + D** | |复制当前行到下一行  |   |
 
 
 
@@ -204,3 +260,22 @@ Sass 文件格式化。
 问题1
 
 解决；You can kill the Microsoft.VSCode.Cpp.IntelliSense.Msvc process to save the file successfully. 也就是 IntelliSense 这个进程。
+
+
+
+
+## 参考链接
+
+- [能让你开发效率翻倍的 VSCode 插件配置（上）](https://zhuanlan.zhihu.com/p/30976584)
+
+
+### 某网友的VS Code 插件截图
+
+20180611_2255.png
+
+
+
+
+
+
+
